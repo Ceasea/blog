@@ -1,8 +1,25 @@
-# Lammps compile file
+# Lammps compile 
 
-Filename: Makefile.mpi
+Makefile name
 
-# Changes:
+> MAKE/Makefile.mpi
+
+Add package
+
+```make yes-packagename```
+
+Like follows:
+
+```make yes-reaxff```
+
+```make ps ``` to check what packages will be installed.
+
+Compile
+
+```make -j 16 mpi```
+
+
+# Makefile Changes:
 ## fftw lib
 
 FFT_INC = -I/data/soft/fftw/v3.3.4_intel/ -DFFT_FFTW
