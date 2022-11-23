@@ -1,4 +1,3 @@
-# Lammps compile 
 
 Makefile name
 
