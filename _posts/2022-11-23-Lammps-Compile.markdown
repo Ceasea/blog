@@ -18,7 +18,7 @@ Compile
 ```make -j 16 mpi```
 
 
-# Makefile Changes:
+## Makefile Changes:
 
 fftw lib
 
