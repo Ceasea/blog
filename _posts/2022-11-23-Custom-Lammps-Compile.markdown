@@ -41,6 +41,5 @@ mpi lib
 
 因此在编译时加入动态链接库地址
 
-> MPI_LIB = $(MPI_PATH)/libmpich.a $(MPI_PATH)/libmpl.a /data/soft/compiler/intel/v2013/comp
-oser_xe_2013_sp1.0.080/compiler/lib/intel64/libimf.a /usr/mpi/gcc/mvapich2-1.9a2/lib/libmp
-ichcxx.a  /usr/mpi/gcc/mvapich2-1.9a2/lib/libmpichcxx.so.8
+> MPI_LIB = /usr/mpi/gcc/mvapich2-1.9a2/lib/libmpich.a  /usr/mpi/gcc/mvapich2-1.9a2/lib/libmpl.a /data/soft/compiler/intel/v2013/comp
+oser_xe_2013_sp1.0.080/compiler/lib/intel64/libimf.a /usr/mpi/gcc/mvapich2-1.9a2/lib/libmpichcxx.a  /usr/mpi/gcc/mvapich2-1.9a2/lib/libmpichcxx.so.8
