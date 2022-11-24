@@ -34,3 +34,13 @@ mpi lib
 > MPI_PATH = -L/usr/mpi/gcc/mvapich2-1.9a2/lib
 > 
 > MPI_LIB = -lmpich -lmpl
+
+尝试换了几个MPI lib, 目前这个可以正常编译通过.
+
+编译通过后无法找到动态链接库, 即使增加了LD_library_PATH后也不行.(原因不明)
+
+因此在编译时加入动态链接库地址
+
+> MPI_LIB = $(MPI_PATH)/libmpich.a $(MPI_PATH)/libmpl.a /data/soft/compiler/intel/v2013/comp
+oser_xe_2013_sp1.0.080/compiler/lib/intel64/libimf.a /usr/mpi/gcc/mvapich2-1.9a2/lib/libmp
+ichcxx.a  /usr/mpi/gcc/mvapich2-1.9a2/lib/libmpichcxx.so.8
